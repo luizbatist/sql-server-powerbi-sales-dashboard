@@ -1,15 +1,15 @@
 # Adventure Works Internet Sales BI
 
-## 🖼️ Visão Geral do Relatório
+## 🖼️ Visão Geral do Projeto
 
-![Dashboard de Vendas - Adventure Works](images/capa.png)
+![Capa do Dashboard](images/capa.png)
 
 ---
 
 ## 📊 Contexto do Projeto
 Projeto de **Business Intelligence** com foco na integração entre **SQL Server** e **Power BI**, utilizando a base de dados **AdventureWorks 2014** para análise de vendas via internet.
 
-O projeto simula um cenário real de BI, onde os dados são modelados e consolidados no banco de dados relacional, permitindo que o Power BI consuma informações já tratadas, padronizadas e prontas para análise.
+O projeto simula um cenário real de BI, no qual os dados são tratados e consolidados no banco de dados relacional, permitindo que o Power BI consuma informações prontas para análise e visualização.
 
 ---
 
@@ -17,7 +17,7 @@ O projeto simula um cenário real de BI, onde os dados são modelados e consolid
 - Centralizar os dados de vendas em uma *view* única no SQL Server  
 - Facilitar o consumo analítico no Power BI  
 - Analisar desempenho de vendas, clientes e lucratividade  
-- Gerar indicadores claros para apoio à tomada de decisão  
+- Apoiar a tomada de decisão por meio de indicadores claros  
 
 ---
 
@@ -38,15 +38,15 @@ A solução foi construída a partir da tabela fato **FactInternetSales**, com i
 - DimCustomer  
 - DimGeography  
 
-A partir dessas tabelas, foi criada a *view* **RESULTADOS_ADW**, responsável por consolidar informações de pedidos, produtos, clientes, localização geográfica e métricas financeiras.
-
-Essa abordagem reduz a complexidade no Power BI e melhora a performance e governança dos dados.
+A partir dessas tabelas, foi criada a *view* **RESULTADOS_ADW**, responsável por consolidar dados de pedidos, produtos, clientes, localização geográfica e métricas financeiras.
 
 ---
 
 ## 📈 Indicadores Analisados
 
 ### Aba Geral
+![Aba Geral](images/geral.png)
+
 - Receita Total  
 - Quantidade Vendida  
 - Total de Categorias de Produtos  
@@ -56,7 +56,11 @@ Essa abordagem reduz a complexidade no Power BI e melhora a performance e govern
 - Quantidade Vendida por Mês  
 - Lucro por País  
 
+---
+
 ### Aba Clientes
+![Aba Clientes](images/clientes.png)
+
 - Vendas por País  
 - Clientes por País  
 - Vendas por Gênero  
@@ -66,8 +70,8 @@ Essa abordagem reduz a complexidade no Power BI e melhora a performance e govern
 
 ## 🔎 Principais Insights
 - Os Estados Unidos concentram a maior parte da receita e do lucro, sendo o principal mercado da empresa  
-- A categoria *Bikes* apresenta o maior ticket médio e impacto direto na lucratividade  
-- As vendas apresentam comportamento sazonal, com maior volume nos últimos meses do ano  
+- A categoria *Bikes* apresenta o maior impacto no faturamento e no ticket médio  
+- As vendas possuem comportamento sazonal, com maior volume nos últimos meses do ano  
 - A distribuição de vendas por gênero é equilibrada, sem distorções relevantes  
 
 ---
@@ -79,10 +83,10 @@ Essa abordagem reduz a complexidade no Power BI e melhora a performance e govern
 ---
 
 ## 📁 Arquivos do Projeto
-- `query_view_resultados_adw.sql` → Criação da view no SQL Server  
-- `dashboard_adventure_works.pbix` → Dashboard interativo no Power BI  
+- `sql-server-view` → Criação da view no SQL Server  
+- `sql-server-powerbi-sales-dashboard` → Dashboard interativo no Power BI  
 
 ---
 
 ## ✅ Conclusão
-O projeto demonstra a aplicação prática de **SQL Server para modelagem e consolidação de dados** e o uso do **Power BI como ferramenta de visualização e análise**, seguindo um fluxo comum em ambientes corporativos de Business Intelligence.
+O projeto demonstra a aplicação prática de **SQL Server para modelagem e consolidação de dados** e o uso do **Power BI como ferramenta de visualização analítica**, seguindo um fluxo comum em ambientes corporativos de Business Intelligence.
