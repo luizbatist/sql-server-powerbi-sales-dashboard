@@ -2,7 +2,7 @@
 
 ## 🖼️ Visão Geral do Relatório
 
-![Dashboard de Vendas - Adventure Works](images/dashboard_overview.png)
+![Dashboard de Vendas - Adventure Works](images/capa.png)
 
 ---
 
